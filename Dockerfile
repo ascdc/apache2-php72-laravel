@@ -25,7 +25,7 @@ RUN chmod +x /*.sh && \
 	
 RUN DEBIAN_FRONTEND=noninteractive && apt-get update && \
 	apt-get -y upgrade && \
-	apt-get install -y ^apache2$ ^php7\.2$ ^php7\.2-common$ ^php7\.2-json$ ^php7\.2-opcache$ ^php7\.2-zip$ ^php7\.2-mysql$ ^php7\.2-phpdbg$ ^php7\.2-gd$ ^php7\.2-imap$ ^php7\.2-ldap$ ^php7\.2-pgsql$ ^php7\.2-pspell$ ^php7\.2-recode$ ^php7\.2-tidy$ ^php7\.2-intl$ ^php7\.2-curl$ ^php7\.2-mcrypt$ ^php7\.2-xmlrpc$ ^php7\.2-imagick$ ^php7\.2-xsl$ ^php7\.2-bz2$ ^php7\.2-mbstring$ pkg-config libmagickwand-dev imagemagick build-essential libsasl2-dev libpcre3-dev && \
+	apt-get install -y ^apache2$ ^php7\.2$ ^php7\.2-common$ ^php7\.2-json$ ^php7\.2-opcache$ ^php7\.2-zip$ ^php7\.2-mysql$ ^php7\.2-phpdbg$ ^php7\.2-gd$ ^php7\.2-imap$ ^php7\.2-ldap$ ^php7\.2-pgsql$ ^php7\.2-pspell$ ^php7\.2-recode$ ^php7\.2-tidy$ ^php7\.2-intl$ ^php7\.2-curl$ ^php7\.2-xmlrpc$ ^php7\.2-imagick$ ^php7\.2-xsl$ ^php7\.2-bz2$ ^php7\.2-mbstring$ pkg-config libmagickwand-dev imagemagick build-essential libsasl2-dev libpcre3-dev && \
 	ln -s ../mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load && \
 	wget -qO /usr/local/bin/composer https://getcomposer.org/composer.phar && \
 	chmod 755 /usr/local/bin/composer && \
